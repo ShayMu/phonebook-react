@@ -4,6 +4,9 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './components/App';
+import './styles/fonts/css/fontawesome.min.css';
+import './styles/fonts/css/fa-solid.min.css';
+import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 render(

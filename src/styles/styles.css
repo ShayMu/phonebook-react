@@ -3,6 +3,10 @@
 
 */
 
+button:focus {
+  outline: none;
+}
+
 .contactCard {
   display: inline-block;
   text-align: center;
@@ -15,20 +19,12 @@
   background-color: #62b4f6;
   color: white;
   font-weight: bold;
-  position:relative;
+  position: relative;
 }
 
 .contactCard > div:not(:first-child){
   font-size: 1.3em;
 }
-
-  .contactCard > .editOverlay > i {
-    color: darkgrey;
-    font-size: 3em;
-    display: block;
-    margin: 0.7em;
-    opacity: 1;
-  }
 
   .contactCard > .editOverlay {
     width: 100%;
@@ -43,12 +39,31 @@
     border-radius: 10%;
   }
 
-  .contactCard > .editOverlay:hover{
-    opacity:0.5;
-  }
+    .contactCard > .editOverlay:hover {
+      opacity: 0.5;
+    }
+
+    .contactCard > .editOverlay > button {
+      color: darkgrey;
+      font-size: 3em;
+      display: block;
+      opacity: 1;
+      background-color: transparent;
+      border: none;
+      margin-left: 35%;
+      margin-top: 10%;
+    }
+
+    .contactCard > .editOverlay > button:hover {
+      color: grey;
+    }
+
+    .contactCard > .editOverlay > button:active {
+      color: black;
+    }
 
 .footer{
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 1em;
   left: 0px;
@@ -66,10 +81,6 @@
   border: 0px;
   border-radius: 50%;
   background-color: #8362f6;
-}
-
-.addContactBtn:focus{
-  outline:none;
 }
 
 .addContactBtn:hover {

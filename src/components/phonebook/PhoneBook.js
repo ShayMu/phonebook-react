@@ -14,7 +14,9 @@ class PhoneBook extends React.Component {
 
     return (
       <div>
-        <ContactList contacts={contacts} />
+        <center>
+          <ContactList contacts={contacts} />
+        </center>
       </div>
     );
   }

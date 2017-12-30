@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import PhoneBook from './phonebook/PhoneBook';
+import PhoneBook from './contacts/ContactList';
 import SideMenu from './sideMenu/SideMenu';
 import Header from './header/Header';
 

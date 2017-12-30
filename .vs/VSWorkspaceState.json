@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\contacts",
+    "\\src\\components\\Header",
+    "\\src\\components\\phonebook",
+    "\\src\\components\\sideMenu",
+    "\\src\\styles",
+    "\\tools"
+  ],
+  "SelectedNode": "\\src\\components\\contacts\\ContactCard.js",
+  "PreviewInSolutionExplorer": false
+}

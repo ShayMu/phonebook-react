@@ -2,14 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\actions",
     "\\src\\components",
     "\\src\\components\\contacts",
-    "\\src\\components\\Header",
     "\\src\\components\\phonebook",
-    "\\src\\components\\sideMenu",
-    "\\src\\styles",
-    "\\tools"
+    "\\src\\reducers",
+    "\\src\\store"
   ],
-  "SelectedNode": "\\src\\components\\contacts\\ContactCard.js",
+  "SelectedNode": "\\src\\reducers\\contactsReducer.js",
   "PreviewInSolutionExplorer": false
 }

@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as contactActions from '../../actions/contactActions';
+import * as modalActions from '../../actions/modalActions';
 import ContactCard from './ContactCard';
 
 
@@ -14,12 +15,12 @@ class ContactList extends React.Component {
     this.onEdit = this.onEdit.bind(this);
   }
 
-  onEdit(event) {
-
+  onEdit(contact) {
+    this.props.modalActions.editContact(contact);
   }
 
   onDelete(contact) {
-    this.props.actions.deleteContact(contact);
+    this.props.contactActions.deleteContact(contact);
   }
 
   render() {
@@ -34,7 +35,9 @@ class ContactList extends React.Component {
 }
 
 ContactList.propTypes = {
-  contacts: PropTypes.array.isRequired
+  contacts: PropTypes.array.isRequired,
+  contactActions: PropTypes.object,
+  modalActions: PropTypes.object
 };
 
 function mapStateToProps(state, ownProps) {
@@ -46,7 +49,8 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators(contactActions, dispatch)
+    contactActions: bindActionCreators(contactActions, dispatch),
+    modalActions: bindActionCreators(modalActions, dispatch)
   };
 }
 

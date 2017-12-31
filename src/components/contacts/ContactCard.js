@@ -11,7 +11,7 @@ class ContactCard extends React.Component {
   }
 
   onEdit() {
-
+    this.props.onEdit(this.props.info);
   }
 
   onDelete() {

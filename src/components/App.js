@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import PhoneBook from './contacts/ContactList';
 import SideMenu from './sideMenu/SideMenu';
 import Header from './header/Header';
-import ContactForm from './contacts/contactForm';
+import ContactForm from './contacts/ContactForm';
 
 class App extends React.Component {
 
